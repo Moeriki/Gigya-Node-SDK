@@ -1,20 +1,35 @@
+# Gigya SDK
+
+## Install
+
+    npm install --save gigya-sdk
+
+## Setup
+
+```js
+const Gigya = require('gigya-sdk');
+
+const gigyaAccounts = new Gigya.Accounts({
+  apiKey: '',
+  secret: '',
+  ssl: true,
+});
+```
+
 ## Usage
 
-```javascript
-var  GigyaSDK  = require('gigyasdk'),
-     Gigya     = new GigyaSDK({
-         'apiKey' : '',
-         'secret' : '',
-         'ssl'    : true
-     });
+**Callbacks**
 
-Gigya.services.socialize.getUserInfo({ 'uid' : '' }, function callback(error, result) {
-    if (error) {
-        // Gigya reported an error
-        console.log(error);
-    } else {
-        // We have a valid user
-        console.log(result);
-    }
+```js
+gigyaAccounts.getAccountInfo({ uid: '' }, (err, result) => {
+  //
+});
+```
+
+**Promises**
+
+```js
+gigyaAccounts.getAccountInfo({ uid: '' }).then((response) => {
+  //
 });
 ```

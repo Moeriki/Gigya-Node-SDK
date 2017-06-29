@@ -1,15 +1,26 @@
 {
-  "author": "Jesse Proulx <github@jproulx.net>",
-  "name": "Gigya-Node-SDK",
+  "name": "gigya-sdk",
+  "version": "0.0.0",
   "description": "Wrappers around Gigya's REST API",
-  "version": "1.0.0",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/jproulx/Gigya-Node-SDK.git"
-  },
+  "repository": "https://github.com/Moeriki/gigya-sdk",
   "engines": {
-    "node": "~0.6.5"
+    "node": ">=6"
   },
-  "dependencies": {},
-  "devDependencies": {}
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint index.js test/",
+    "precommit": "lint-staged",
+    "prepush": "npm test"
+  },
+  "devDependencies": {
+    "eslint": "^4.1.1",
+    "eslint-config-muriki": "^9.0.1",
+    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-node": "^5.1.0",
+    "husky": "^0.14.1",
+    "lint-staged": "^4.0.0"
+  },
+  "lint-staged": {
+    "*.js": "eslint"
+  }
 }
