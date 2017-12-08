@@ -9,7 +9,8 @@
   },
   "main": "lib/index.js",
   "scripts": {
-    "lint": "eslint index.js test/",
+    "lint": "eslint --cache index.js test/",
+    "test": "npm run lint",
     "precommit": "lint-staged",
     "prepush": "npm test"
   },
