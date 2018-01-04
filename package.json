@@ -9,13 +9,13 @@
   },
   "main": "lib/index.js",
   "scripts": {
-    "lint": "eslint --cache lib/ test/",
+    "lint": "eslint --cache lib/",
     "test": "npm run lint",
     "precommit": "lint-staged",
     "prepush": "npm test"
   },
   "devDependencies": {
-    "eslint": "^4.13.1",
+    "eslint": "^4.14.0",
     "eslint-config-muriki": "^10.0.0",
     "eslint-plugin-muriki": "^1.0.0",
     "husky": "^0.14.3",
