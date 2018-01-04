@@ -21,7 +21,7 @@ const gigyaAccounts = new Gigya.Accounts({
 **Callbacks**
 
 ```js
-gigyaAccounts.getAccountInfo({ uid: '' }, (err, result) => {
+gigyaAccounts.getAccountInfo({ UID: '' }, (err, result) => {
   //
 });
 ```
@@ -29,7 +29,7 @@ gigyaAccounts.getAccountInfo({ uid: '' }, (err, result) => {
 **Promises**
 
 ```js
-gigyaAccounts.getAccountInfo({ uid: '' }).then((response) => {
+gigyaAccounts.getAccountInfo({ UID: '' }).then((response) => {
   //
 });
 ```
