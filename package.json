@@ -15,13 +15,14 @@
     "prepush": "npm test"
   },
   "devDependencies": {
-    "eslint": "^4.14.0",
-    "eslint-config-muriki": "^10.0.0",
+    "eslint": "^4.15.0",
+    "eslint-config-muriki": "^10.0.1",
     "eslint-plugin-muriki": "^1.0.0",
     "husky": "^0.14.3",
     "lint-staged": "^6.0.0"
   },
   "lint-staged": {
     "*.js": "eslint"
-  }
+  },
+  "dependencies": {}
 }
