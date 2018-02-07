@@ -1,6 +1,6 @@
 {
   "name": "gigya-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Wrappers around Gigya's REST API",
   "repository": "https://github.com/Moeriki/gigya-sdk",
   "license": "MIT",
